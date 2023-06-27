@@ -24,6 +24,8 @@ public class obstacleSpawner : MonoBehaviour
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 38));
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 46));
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 54));
+        obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 60));
+        obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 63));
         float distPerBeat = speed * 60.0f / songBPM;
         Debug.Log("distper"+distPerBeat);
         foreach(KeyValuePair<string, int> obstacle in obstaclePositionsInBeats) {
