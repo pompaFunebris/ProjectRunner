@@ -6,6 +6,7 @@ TagManager:
   tags:
   - characteristics
   - obstacle
+  - music
   layers:
   - Default
   - TransparentFX

@@ -70,7 +70,7 @@ public class obstacleSpawner : MonoBehaviour
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 288));
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 296));
         float distPerBeat = speed * 60.0f / songBPM;
-        Debug.Log("distper"+distPerBeat);
+        //Debug.Log("distper"+distPerBeat);
         foreach(KeyValuePair<string, int> obstacle in obstaclePositionsInBeats) {
             switch(obstacle.Key) {
                 case "fridge":
