@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class characterMovement : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rb;
-    [SerializeField] private float jumpMultiplier = 1;
-    [SerializeField] public float speed = 15;
-    [SerializeField] private int songBPM = 160;
+    private Rigidbody rb;
+    public levelCharacteristics characteristics;
+    private float jumpMultiplier;
+    private float speed;
+    private float songBPM;
     private bool canJump = false;
+    public GameObject objectCharacteristics;
 
     private void OnCollisionEnter(Collision collision) {
         canJump = true;
@@ -20,7 +22,11 @@ public class characterMovement : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(canJump);
+        objectCharacteristics = GameObject.FindGameObjectWithTag("characteristics").gameObject;
+        characteristics = objectCharacteristics.GetComponent<levelCharacteristics>();
+        jumpMultiplier = characteristics.jumpMultiplier;
+        speed = characteristics.speed;
+        songBPM = characteristics.songBPM;
     }
 
     // Update is called once per frame
@@ -29,7 +35,7 @@ public class characterMovement : MonoBehaviour
         foreach (Touch touch in Input.touches) {
             //Debug.Log(canJump);
             if (touch.phase == 0) {
-                if (canJump) {
+                if (transform.position.y < 0.1f) {
                     transform.position = transform.position + new Vector3(0, jumpMultiplier, 0);
                 }
             }
