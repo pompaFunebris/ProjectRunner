@@ -40,6 +40,7 @@ public class fridgeBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        jumpOffset = 0.0f;
         if(Math.Abs(transform.position.z - GameObject.FindWithTag("Player").transform.position.z) < requiredDistanceToFall + jumpOffset + (speed * beatTime)) {
             if(!isTipAnimStarted) {
                 isTipAnimStarted = true;

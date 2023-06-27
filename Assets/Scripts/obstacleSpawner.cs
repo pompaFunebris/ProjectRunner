@@ -31,12 +31,12 @@ public class obstacleSpawner : MonoBehaviour
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 86));
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 91));
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 94));
-        obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 100));
-        obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 104));
-        obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 108));
-        obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 112));
-        obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 116));
-        obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 120));
+        //obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 100));
+        //obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 104));
+        //obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 108));
+        //obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 112));
+        //obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 116));
+        //obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 120));
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 134));
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 138));
         obstaclePositionsInBeats.Add(new KeyValuePair<string, int>("fridge", 142));
