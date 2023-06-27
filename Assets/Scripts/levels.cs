@@ -16,7 +16,7 @@ public class levels : MonoBehaviour
 
     public void handleStartLevel1Button()
     {
-        SceneManager.LoadScene("MuseumInvasion");
+        SceneManager.LoadScene("main");
     }
 
     public void handleBackBtn(String value)
