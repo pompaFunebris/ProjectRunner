@@ -76,7 +76,7 @@ public class obstacleSpawner : MonoBehaviour
                 case "fridge":
                     GameObject tree = Instantiate(obstacleFridge);
                     tree.transform.position = new Vector3(43f, 0f, (obstacle.Value * distPerBeat) + jumpOffset);
-                    //Debug.Log("instantiated tree at" + obstacle.Value * distPerBeat);
+                    Debug.Log("instantiated tree at" + obstacle.Value * distPerBeat);
                     break;
             }
         }
